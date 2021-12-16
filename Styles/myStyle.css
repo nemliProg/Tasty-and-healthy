@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab,wght@1,500&display=swap');
+/* 
+  font-family: 'Amatic SC', cursive; headings
+  font-family: 'Josefin Slab', serif; texts
+*/
+
+
+*{
+  margin: 0;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+main {
+  position: relative;
+  padding-bottom: 120px ;
+}
+.homeCover{
+  height: 100vh;
+  background-color: bisque;
+  position: relative;
+  background-image: url(/assets/images/img-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.homeCover  h1{
+  color: white;
+}
+.homeCover > div{
+  padding-left: 40px;
+  color: white;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 200px;
+}
+.nav li{
+  width: 100%;
+}
+.nav li a {
+  color: white;
+  font-style: normal;
+  text-align: center;
+}
+
+.nav .line::after{
+  position: absolute;
+  content: "";
+  width: 80%;
+  left: 20px;
+  height: 2px;
+  background-color: black;
+}
+.quote{
+  text-align: center;
+  font-size: 18px;
+}
+.hadi{
+  height: 400px;
+  width: 100%;
+}
+.heading2{
+  text-align: center;
+  padding: 30px 0px;
+}
+.flexSection{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flexSection .flexSectionSon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexSection .flexSectionSon h3{
+  padding-bottom: 20px;
+}
+.flexSection .flexSectionSon p{
+  padding: 10px;
+  text-align: center;
+}
+.image1 {
+  width: 50%;
+}
+.threAreas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.area h3{
+  text-align: center;
+}
+.homefooter{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width:1050px) {
+  .flexSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image1 {
+    width: 80%;
+  }
+  .hadi{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:850px) {
+  .threAreas{
+    flex-direction: column;
+  }
+  .firstPInAbout{
+    margin-top: 30px;
+  }
+  .aboutImg h1{
+    font-size: 30px;
+  }
+}
+.aboutImg{
+  padding: 0;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/img-10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutImg h1{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+.row :last-child h3{
+  text-align: center;
+}
+.row :last-child q{
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+}
+
+/* new restaurant */
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+  height: 95vh;
+  position: relative;
+}
+.slideImg{
+  width: 100%;
+}
+.underSlider{
+  padding: 20px 0px;
+}
+.underSlider *{
+  text-align: center;
+}
+.adresseSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.adresseSection p{
+  width: 40%;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.gmap_canvas{
+  width: 100%;
+  height: 100%;
+}
+.mapouter{
+  width: 45%;
+  height: 300px;
+}
+@media screen and (max-width:1150px) {
+  .adresseSection{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .adresseSection p{
+    text-align: center;
+  }
+  .mapouter{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .slider{
+    height: max-content;
+  }
+}
+.slider h1{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.points {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80px;
+}
+.point{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+@media screen and (max-width:750px) {
+  h1{
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+  }
+}

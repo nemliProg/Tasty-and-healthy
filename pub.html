@@ -19,8 +19,8 @@
 
   <title>Title page</title>  
 
-<link href="./main.82cfd66e.css" rel="stylesheet">
-<link rel="stylesheet" href="/myStyle.css" />
+<link href="/Styles/main.82cfd66e.css" rel="stylesheet">
+<link rel="stylesheet" href="/Styles/myStyle.css" />
 </head>
 
 <body>
@@ -43,15 +43,14 @@
           <a class="site-brand" href="./index.html" title="">
             <img class="img-responsive site-logo" alt="" src="./assets/logos/black.png">
           </a>
-        <p>Healthy food pour un corps sain</p>
+        <p class="quote">Healthy food pour un corps sain</p>
       </div>
       <ul class="nav">
         <li class="line"><a href="./index.html" title="">Home</a></li>
         <li class="line"><a href="./about.html" title="">About</a></li>
         <li class="line"><a href="./services.html" title="">Services</a></li>
-        <li class="line"><a href="./contact.html" title="">Contact</a></li>
-        <li><a href="./components.html" title="">Components</a></li>
-
+        <li class="line"><a href="/pub.html" title="">new Restaurant</a></li>
+        <li><a href="./contact.html" title="">Contact</a></li>
       </ul>
 
       <nav class="nav-footer">
@@ -66,13 +65,31 @@
             <i class="fa fa-twitter"></i>
           </a>
         </p>
-        <p>© tasta | Website created with LOVE</p>
-      </nav>  
+        <p>
+          ©Tasty & Healthy<br>Website created with LOVE
+        </p>
+      </nav>
     </div> 
   </nav>
 </header>
 <main class="" id="main-collapse">
- 
+  <div class="slider" id="slider">
+    <img class="slideImg" id="slideImg" src="/assets/newRestaurant/terasse_ok_rognage-960x693.png" alt="">
+    <h1>ORGANIC FOOD MADE EASY AND HEALTHY</h1>
+    <div class="points">
+      <div class="point p1"></div>
+      <div class="point p2"></div>
+      <div class="point p3"></div>
+    </div>
+  </div>
+  <div class="underSlider">
+    <h2>welcome to our new restaurant in safi</h2>
+    <p>Votre plat est prêt. Il n'attend que vous.</p>
+  </div>
+  <div class="adresseSection">
+    <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=youcode&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;}</style></div></div>
+    <p>Résidence Naourass, Boulevard Ibnabdellah, ville nouvelle, Safi, Maroc</p>
+</div>
 </main>
 
 <script>
@@ -95,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.85741bff.js"></script></body>
+--> <script type="text/javascript" src="./main.85741bff.js"></script>
+<script src="/scripts/myScript.js"></script>
+</body>
 
 </html>
